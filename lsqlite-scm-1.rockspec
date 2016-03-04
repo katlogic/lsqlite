@@ -19,5 +19,10 @@ dependencies = {
 
 build = {
 	type = "builtin";
-	sources = { "lsqlite.c" }
+	modules = {
+		lsqlite = {
+			sources = { "lsqlite.c" };
+			libraries = { "sqlite3" };
+		}
+	}
 }
