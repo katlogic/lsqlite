@@ -44,7 +44,7 @@ colliding fields, otherwise those get silently overwritten.
 Finally, already existing table can be supplied where fields will be filled
 out, like so:
 
-db:tcol(row, "SELECT foo, bar FROM baz; SELECT duh FROM bleh")
+`db:tcol(row, "SELECT foo, bar FROM baz; SELECT duh FROM bleh")`
 
 (same table is also returned)
 
